@@ -43,6 +43,7 @@ namespace VirtualPet
                 Console.WriteLine("\t7 - Quit");
                 Console.WriteLine("\t8 - Restart\n\n\n\n");
 
+                //stores user input
                 int input = int.Parse(Console.ReadLine());
 
                 //quit/restart program
