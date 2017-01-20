@@ -63,26 +63,32 @@ namespace VirtualPet
                     {
                         case (1):
                             vPet.Feed();    //decreases hunger, increases thirst, increases potty
+                            vPet.Tick();    //randomly increases a specific field
                             Console.Clear();
                             break;
                         case (2):
                             vPet.Water();
+                            vPet.Tick();    //randomly increases a specific field
                             Console.Clear();
                             break;
                         case (3):
                             vPet.Poop();
+                            vPet.Tick();    //randomly increases a specific field
                             Console.Clear();
                             break;
                         case (4):
                             vPet.Play();
+                            vPet.Tick();    //randomly increases a specific field
                             Console.Clear();
                             break;
                         case (5):
                             vPet.Sleep();
+                            vPet.Tick();    //randomly increases a specific field
                             Console.Clear();
                             break;
                         case (6):
                             vPet.Vet();
+                            vPet.Tick();    //randomly increases a specific field
                             Console.Clear();
                             break;
                         default:

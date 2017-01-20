@@ -9,6 +9,7 @@ namespace VirtualPet
     class Roscoe
     {
         //fields
+        //enumerators converted to integers
         private int hunger;
         private int thirst;
         private int energy;
@@ -16,7 +17,7 @@ namespace VirtualPet
         private int tired;
         private int health;
 
-        //properties
+        //properties 
         public int Hunger
         {
             get { return hunger; }
@@ -49,19 +50,28 @@ namespace VirtualPet
         }
 
         //methods
-        public int Tick()
+        public void Tick()
         {
-            //create array of fields
-            int[] stats = { hunger, thirst, energy, tired, health };
-
+            //randomly updates fields
             Random num = new Random();
-            //randomly select one field
-            int randIndex = num.Next(0, stats.Length);
-            int randField = stats[randIndex];
 
-            int tick = num.Next(0, 10 + 1);
+            int n1 = num.Next(3);   //randomly updates hunger by a value of 0, 1, or 2
+            hunger += n1;
 
-            return randField += tick;
+            int n2 = num.Next(3);   //randomly updates thirst by a value of 0, 1, or 2
+            thirst += n2;
+
+            int n3 = num.Next(3);   //randomly updates energy by a value of 0, 1, or 2
+            energy += n3;
+
+            int n4 = num.Next(3);   //randomly updates potty by a value of 0, 1, or 2
+            potty += n4;
+
+            int n5 = num.Next(3);   //randomly updates tired by a value of 0, 1, or 2
+            tired += n5;
+
+            int n6 = num.Next(1);   //randomly updates hunger by a value of 0, or 1
+            hunger += n6;
         }
         public void Feed()
         {
