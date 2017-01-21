@@ -24,15 +24,27 @@ namespace VirtualPet
             //sets bool for window maximize prompt
             bool first = true;
 
-            while (true)
+            do
             {
                 //asks user to maximize console window for optimal experience the first time program is used
-                if (first == true)
-                {
-                    Console.WriteLine("PLEASE MAXIMIZE WINDOW FOR OPTIMAL EXPERIENCE");
-                }
+                Console.WriteLine("\n\n\n\n   >>>>>>>>>>   PLEASE MAXIMIZE WINDOW FOR OPTIMAL EXPERIENCE   <<<<<<<<<<\n\n\n");
+
+                //asks user to press enter to begin game
+                Console.WriteLine("     Welcome to Virtual Pet!\n");
+                Console.WriteLine(@"     I hope you enjoy taking care of Roscoe as much as I do :)");
+                Console.WriteLine("\n\n\n     Press ENTER to continue\n");
+
+                Console.WriteLine("\n\n\n\n   >>>>>>>>>>   PLEASE MAXIMIZE WINDOW FOR OPTIMAL EXPERIENCE   <<<<<<<<<<\n\n\n");
+
+                Console.ReadKey();
+
                 first = false;
 
+            } while (first == true);
+
+
+            while (true)
+            {
                 //displays pet status
                 Console.WriteLine("Roscoe's Health:");
                 Console.WriteLine("Hunger:      " + vPet.Hunger);
