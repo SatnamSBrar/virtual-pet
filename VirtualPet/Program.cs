@@ -46,7 +46,7 @@ namespace VirtualPet
             while (true)
             {
                 //displays pet status
-                Console.WriteLine("Roscoe's Health:");
+                Console.WriteLine("\nRoscoe's Health:\n");
                 Console.WriteLine("Hunger:      " + vPet.Hunger);
                 Console.WriteLine("Thirst:      " + vPet.Thirst);
                 Console.WriteLine("Potty        " + vPet.Potty);
@@ -56,7 +56,7 @@ namespace VirtualPet
 
                 //prompts user for action
                 Console.Write("\nWhat would you like to do?");
-                Console.WriteLine("\tEnter a number 1-8");
+                Console.WriteLine("\tEnter a number 1-8\n");
                 Console.WriteLine("\t\t\t\t1 - Feed");
                 Console.WriteLine("\t\t\t\t2 - Give water");
                 Console.WriteLine("\t\t\t\t3 - Take outside to potty");
@@ -78,7 +78,8 @@ namespace VirtualPet
                         Console.WriteLine(@" \_,` | \-'  /   )`-')");
                         Console.WriteLine("  \"\") `\"`    \\  ((`\"`");
                         Console.WriteLine(" ___Y  ,    .'7 /|");
-                        Console.Write("(_,___/...-` (_/_/\t\t\t\t\t\t");
+                        Console.WriteLine("(_,___/...-` (_/_/");
+                        Console.WriteLine("\n");
                         break;
                     case (1):
                         Console.WriteLine("    _____^_");
@@ -86,7 +87,8 @@ namespace VirtualPet
                         Console.WriteLine(@"    \   /  ^ |");
                         Console.WriteLine(@"   / \_/   0  \");
                         Console.WriteLine(@"  /    ____     0");
-                        Console.Write(" /     /  \\___ _/\t\t\t\t\t\t");
+                        Console.WriteLine(" /     /  \\___ _/");
+                        Console.WriteLine("\n");
                         break;
                     case (2):
                         Console.WriteLine(@"     |\_/|");
@@ -95,21 +97,24 @@ namespace VirtualPet
                         Console.WriteLine(@"     |  _/\------____ ((| |))");
                         Console.WriteLine(@"     |               `--' | ");
                         Console.WriteLine(@" ____|_       ___|   |___.'");
-                        Console.Write("/_/_____/____/_______|\t\t\t\t\t\t");
+                        Console.WriteLine("/_/_____/____/_______|");
+                        Console.WriteLine("\n");
                         break;
                     case (3):
                         Console.WriteLine(@"   __");
                         Console.WriteLine(@"o-''|\_____/)");
                         Console.WriteLine(@" \_/|_)     )");
                         Console.WriteLine(@"    \  __  /");
-                        Console.Write("    (_/ (_/\t\t\t\t\t\t");
+                        Console.WriteLine("    (_/ (_/");
+                        Console.WriteLine("\n");
                         break;
                     case (4):
                         Console.WriteLine("             .--~~,__");
                         Console.WriteLine(":-....,-------`~~'._.'");
                         Console.WriteLine(" `-,,,  ,_      ;'~U'");
                         Console.WriteLine("  _,-' ,'`-__; '--.");
-                        Console.Write(" (_/'~~      ''''(;\t\t\t\t\t\t");
+                        Console.Write(" (_/'~~      ''''(;");
+                        Console.WriteLine("\n");
                         break;
                 }
 
