@@ -42,6 +42,7 @@ namespace VirtualPet
 
             } while (first == true);
 
+            Console.Clear();
 
             while (true)
             {
@@ -194,12 +195,12 @@ namespace VirtualPet
                 //alerts if pet is fed too much
                 if (vPet.Hunger < 0 && vPet.Hunger >= -10)
                 {
-                    Console.WriteLine("            ********************   ALERT!   ********************");
+                    Console.WriteLine("\n            ********************   ALERT!   ********************");
                     Console.WriteLine("*****************   Your pet does not need any more food!   *****************\n");
                 }
                 else if (vPet.Hunger < -10 && vPet.Hunger >= -15)
                 {
-                    Console.WriteLine("       ********************   ALERT!   ********************");
+                    Console.WriteLine("\n       ********************   ALERT!   ********************");
                     Console.WriteLine("*****************   Your pet needs a doctor!   *****************\n");
 
                     Random num = new Random();  //pet becomes sick if it is fed too much
@@ -216,7 +217,7 @@ namespace VirtualPet
                 //alerts user to take pet to the vet
                 if (vPet.Health < 0 && vPet.Health >= -15)
                 {
-                    Console.WriteLine("       ********************   ALERT!   ********************");
+                    Console.WriteLine("\n       ********************   ALERT!   ********************");
                     Console.WriteLine("*****************   Your pet needs a doctor!   *****************\n");
                 }
                 else if (vPet.Health < -15)
@@ -227,12 +228,12 @@ namespace VirtualPet
                 //alerts user pet needs to potty
                 if (vPet.Potty > 15 && vPet.Potty <= 20)
                 {
-                    Console.WriteLine("       ********************   ALERT!   ********************");
+                    Console.WriteLine("\n       ********************   ALERT!   ********************");
                     Console.WriteLine("*****************   Your pet needs to potty!   *****************\n");
                 }
                 else if (vPet.Potty > 20)
                 {
-                    Console.WriteLine("       ********************   ALERT!   ********************");
+                    Console.WriteLine("\n       ********************   ALERT!   ********************");
                     Console.WriteLine("*********   Your pet has eaten its poop and is now sick!   *********\n");
                     Random num = new Random();  //pet becomes sick if it eats poop
                     int sickUpdate = num.Next(5, 9);
@@ -242,12 +243,12 @@ namespace VirtualPet
                 //alerts user if pet is too tired
                 if (vPet.Tired > 15 && vPet.Tired <= 25)
                 {
-                    Console.WriteLine("       ********************   ALERT!   ********************");
+                    Console.WriteLine("\n       ********************   ALERT!   ********************");
                     Console.WriteLine("*****************   Your pet is getting tired!   *****************\n");
                 }
                 else if (vPet.Tired > 25)
                 {
-                    Console.WriteLine("       ********************   ALERT!   ********************");
+                    Console.WriteLine("\n       ********************   ALERT!   ********************");
                     Console.WriteLine("*****************   Your pet has fallen asleep!   *****************\n");
                     Random num = new Random();  //pet falls asleep if too tired
                     int tiredUpdate = num.Next(10, 20);
@@ -257,12 +258,12 @@ namespace VirtualPet
                 //alerts user if pet has too much energy
                 if (vPet.Energy > 20 && vPet.Energy <= 30)
                 {
-                    Console.WriteLine("      ********************   ALERT!   ********************");
+                    Console.WriteLine("\n      ********************   ALERT!   ********************");
                     Console.WriteLine("*****************   Your pet needs to play!   *****************\n");
                 }
                 else if (vPet.Energy > 30)
                 {
-                    Console.WriteLine("     ********************   ALERT!   ********************");
+                    Console.WriteLine("\n     ********************   ALERT!   ********************");
                     Console.WriteLine("*****************   Your pet hurt itself!   *****************\n");
                     Random num = new Random();  //pet gets hurt if it runs around too much
                     int sickUpdate = num.Next(4);
@@ -272,12 +273,12 @@ namespace VirtualPet
                 //alerts if pet needs to be fed
                 if (vPet.Hunger > 20 && vPet.Hunger <=30)
                 {
-                    Console.WriteLine("      ********************   ALERT!   ********************");
+                    Console.WriteLine("\n      ********************   ALERT!   ********************");
                     Console.WriteLine("*****************   Your pet needs to eat!   *****************\n");
                 }
                 else if (vPet.Hunger > 30)
                 {
-                    Console.WriteLine("    ********************   ALERT!   ********************");
+                    Console.WriteLine("\n    ********************   ALERT!   ********************");
                     Console.WriteLine("*****************   Your pet is sick!   *****************\n");
                     Random num = new Random();  //pet gets sick if it doesn't eat
                     int sickUpdate = num.Next(5, 11);
@@ -287,12 +288,12 @@ namespace VirtualPet
                 //alerts if pet needs water
                 if (vPet.Hunger > 20 && vPet.Hunger <= 30)
                 {
-                    Console.WriteLine("      ********************   ALERT!   ********************");
+                    Console.WriteLine("\n      ********************   ALERT!   ********************");
                     Console.WriteLine("*****************   Your pet needs water!   *****************\n");
                 }
                 else if (vPet.Hunger > 30)
                 {
-                    Console.WriteLine("    ********************   ALERT!   ********************");
+                    Console.WriteLine("\n    ********************   ALERT!   ********************");
                     Console.WriteLine("*****************   Your pet is sick!   *****************\n");
                     Random num = new Random();  //pet gets sick if deprived of water
                     int sickUpdate = num.Next(5, 11);
