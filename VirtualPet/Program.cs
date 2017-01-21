@@ -283,18 +283,48 @@ namespace VirtualPet
             {
                 case (0):
                     Console.WriteLine("\nYou have lost your virtual pet.\n");
+                    Console.WriteLine(@"      _    _");
+                    Console.WriteLine(@"     / )__/ )");
+                    Console.WriteLine(@"    /      _\ _");
+                    Console.WriteLine(@"   (______( |/ \");
+                    Console.WriteLine(@"   (/      \|xx-o");
+                    Console.WriteLine(@"             vv\n");
                     break;
                 case (1):
                     Console.WriteLine("\nYou need to be more responsble.\n");
+                    Console.WriteLine(@"      _    _");
+                    Console.WriteLine(@"     / )__/ )");
+                    Console.WriteLine(@"    /      _\ _");
+                    Console.WriteLine(@"   (______( |/ \");
+                    Console.WriteLine(@"   (/      \|xx-o");
+                    Console.WriteLine(@"             vv\n");
                     break;
                 case (2):
                     Console.WriteLine("\nYour poor virtual pet :(\n");
+                    Console.WriteLine(@"      _    _");
+                    Console.WriteLine(@"     / )__/ )");
+                    Console.WriteLine(@"    /      _\ _");
+                    Console.WriteLine(@"   (______( |/ \");
+                    Console.WriteLine(@"   (/      \|xx-o");
+                    Console.WriteLine(@"             vv\n");
                     break;
                 case (3):
                     Console.WriteLine("\nGame Over.\n");
+                    Console.WriteLine(@"      _    _");
+                    Console.WriteLine(@"     / )__/ )");
+                    Console.WriteLine(@"    /      _\ _");
+                    Console.WriteLine(@"   (______( |/ \");
+                    Console.WriteLine(@"   (/      \|xx-o");
+                    Console.WriteLine(@"             vv\n");
                     break;
                 case (4):
                     Console.WriteLine("\nYour virtual pet as died as a consequence of your ineptitude.\n");
+                    Console.WriteLine(@"      _    _");
+                    Console.WriteLine(@"     / )__/ )");
+                    Console.WriteLine(@"    /      _\ _");
+                    Console.WriteLine(@"   (______( |/ \");
+                    Console.WriteLine(@"   (/      \|xx-o");
+                    Console.WriteLine(@"             vv\n");
                     break;
             }
             
