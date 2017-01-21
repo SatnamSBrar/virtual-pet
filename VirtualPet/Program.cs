@@ -23,8 +23,12 @@ namespace VirtualPet
 
             while (true)
             {
+                //asks user to maximize console window for optimal experience
+                Console.WriteLine("Please maximize window for optimal experience\n");
+
                 //displays pet status
-                Console.WriteLine("\nHunger:      " + vPet.Hunger);
+                Console.WriteLine("Roscoe's Health:");
+                Console.WriteLine("Hunger:      " + vPet.Hunger);
                 Console.WriteLine("Thirst:      " + vPet.Thirst);
                 Console.WriteLine("Potty        " + vPet.Potty);
                 Console.WriteLine("Energy:      " + vPet.Energy);
@@ -32,19 +36,85 @@ namespace VirtualPet
                 Console.WriteLine("Health:      " + vPet.Health);
 
                 //prompts user for action
-                Console.WriteLine("\nWhat would you like to do?");
-                Console.WriteLine("Enter a number 1-8");
-                Console.WriteLine("\t1 - Feed");
-                Console.WriteLine("\t2 - Give water");
-                Console.WriteLine("\t3 - Take outside to potty");
-                Console.WriteLine("\t4 - Play");
-                Console.WriteLine("\t5 - Tuck into bed");
-                Console.WriteLine("\t6 - Take to vet");
-                Console.WriteLine("\t7 - Quit");
-                Console.WriteLine("\t8 - Restart\n\n\n\n");
+                Console.Write("\nWhat would you like to do?");
+                Console.WriteLine("\tEnter a number 1-8");
+                Console.WriteLine("\t\t\t\t1 - Feed");
+                Console.WriteLine("\t\t\t\t2 - Give water");
+                Console.WriteLine("\t\t\t\t3 - Take outside to potty");
+                Console.WriteLine("\t\t\t\t4 - Play");
+                Console.WriteLine("\t\t\t\t5 - Tuck into bed");
+                Console.WriteLine("\t\t\t\t6 - Take to vet");
+                Console.WriteLine("\t\t\t\t7 - Quit");
+                Console.WriteLine("\t\t\t\t8 - Restart");
 
-                //stores user input
-                int input = int.Parse(Console.ReadLine());
+                //random image to be displayed 
+                Random pic = new Random();
+                int image = pic.Next(4);
+
+                switch (image)
+                {
+                    case (0):
+                        Console.WriteLine("    ___");
+                        Console.WriteLine(" __/_  `.  .-\"\"\" -.");
+                        Console.WriteLine(@" \_,` | \-'  /   )`-')");
+                        Console.WriteLine("  \"\") `\"`    \\  ((`\"`");
+                        Console.WriteLine(" ___Y  ,    .'7 /|");
+                        Console.WriteLine("(_,___/...-` (_/_/");
+                        break;
+                    case (1):
+                        Console.WriteLine("    _____^_");
+                        Console.WriteLine(@"   |    |    \");
+                        Console.WriteLine(@"    \   /  ^ |");
+                        Console.WriteLine(@"   / \_/   0  \");
+                        Console.WriteLine(@"  /    ____     0");
+                        Console.WriteLine(@" /     /  \___ _/");
+                        break;
+                    case (2):
+                        Console.WriteLine(@"     |\_/|");
+                        Console.WriteLine(@"     | @ @   Woof!");
+                        Console.WriteLine(@"     |   <>              _ ");
+                        Console.WriteLine(@"     |  _/\------____ ((| |))");
+                        Console.WriteLine(@"     |               `--' | ");
+                        Console.WriteLine(@" ____|_       ___|   |___.'");
+                        Console.WriteLine(@"/_/_____/____/_______|");
+                        break;
+                    case (3):
+                        Console.WriteLine(@"   __");
+                        Console.WriteLine(@"o-''|\_____/)");
+                        Console.WriteLine(@" \_/|_)     )");
+                        Console.WriteLine(@"    \  __  /");
+                        Console.WriteLine(@"    (_/ (_/");
+                        break;
+                    case (4):
+                        Console.WriteLine("             .--~~,__");
+                        Console.WriteLine(":-....,-------`~~'._.'");
+                        Console.WriteLine(" `-,,,  ,_      ;'~U'");
+                        Console.WriteLine("  _,-' ,'`-__; '--.");
+                        Console.WriteLine(" (_/'~~      ''''(;");
+                        break;
+                }
+
+                //stores user input as string
+                string userInput = Console.ReadLine();
+
+                //bypasses error if user presses enter without entering value
+                while (userInput == "")
+                {
+                    Console.WriteLine("Please enter a valid number");
+                    string userInput2 = Console.ReadLine();
+                    userInput = userInput2;
+                }
+
+                //stores user input as integer
+                int input = int.Parse(userInput);
+
+                //prevents user from entering values out of range
+                while (input < 0 || input > 8)
+                {
+                    Console.WriteLine("Please enter a valid number");
+                    int input2 = int.Parse(Console.ReadLine());
+                    input = input2;
+                }
 
                 //quit/restart program
                 if (input == 7)
@@ -92,7 +162,6 @@ namespace VirtualPet
                             Console.Clear();
                             break;
                         default:
-                            Console.WriteLine("Please enter a valid number");
                             break;
                     }
                 }
