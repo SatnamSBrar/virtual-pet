@@ -72,6 +72,9 @@ namespace VirtualPet
 
             int n6 = num.Next(1);   //randomly updates hunger by a value of 0, or 1
             hunger += n6;
+
+            int n7 = num.Next(1);   //randomly updates health by a value of 0, or 1
+            health -= n7;
         }
         public void Feed()
         {
@@ -177,7 +180,7 @@ namespace VirtualPet
             thirst += thirstUpdate;
 
             //updates health by random num ranging from 1-2
-            int healthUpdate = num.Next(1, 3);
+            int healthUpdate = num.Next(1);
             health += healthUpdate;
         }
         public void Vet()

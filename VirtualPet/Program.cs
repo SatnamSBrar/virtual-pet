@@ -307,7 +307,7 @@ namespace VirtualPet
             switch(conclusion)
             {
                 case (0):
-                    Console.WriteLine("\nYou have lost your virtual pet.\n");
+                    Console.WriteLine("\nYou have abandoned Roscoe.\n");
                     Console.WriteLine(@"      _    _");
                     Console.WriteLine(@"     / )__/ )");
                     Console.WriteLine(@"    /      _\ __");
@@ -327,7 +327,7 @@ namespace VirtualPet
                     Console.WriteLine("\n");
                     break;
                 case (2):
-                    Console.WriteLine("\nYour poor virtual pet :(\n");
+                    Console.WriteLine("\nPoor Roscoe :(\n");
                     Console.WriteLine(@"      _    _");
                     Console.WriteLine(@"     / )__/ )");
                     Console.WriteLine(@"    /      _\ __");
